@@ -410,7 +410,7 @@ SOFTWARE.
 - **Rust Foundation** - For Cargo and Rust tooling
 - **Open Source Community** - For inspiration and continuous improvement
 - **Claude AI** - For initial development assistance and architecture design
-- **Dr. Windows Community** - For testing, feedback, and German localization
+- **ChatGPT AI** - For readme help
 
 ## 📞 Support & Community
 
