@@ -23,6 +23,35 @@ Thanks for stopping by. 😊
 — Martin
 
 
+## 🤖 Collaboration & Credit
+
+**I created WUPM with AI assistance, and I'm happy if it grows beyond what I can maintain myself!**
+
+### If you want to contribute:
+- **Small improvements:** Just send a PR, I'll review with AI help
+- **Major features:** Feel free to fork and expand - just keep me credited as original creator
+- **Want to become co-maintainer?** Reach out! I'm open to collaboration
+
+### What I ask:
+- Please keep credit to Martin (original creator) and Claude AI and ChatGPT (development assistant)
+- If you fork for major expansions, mention this as the original project
+- Be patient with my learning curve - I use AI to understand complex suggestions! 😊
+
+**I'm excited to see where the community takes this!** 🚀
+
+## 🙏 Acknowledgments & Future
+
+**Original Creator:** Martin (with Claude AI and ChatGPT assistance)
+
+This project started as "what if Linux package management existed on Windows?" 
+If it grows beyond my technical skills, I'm excited to see the community take it further!
+
+**Want to help expand WUPM?** 
+- Small fixes: Send PRs
+- Big features: Let's talk about collaboration  
+- Major fork: Keep the credits and let me know! 
+
+The goal was always to make Windows package management better - however that happens! 🎉
 
 # WUPM - Windows Universal Package Manager
 
