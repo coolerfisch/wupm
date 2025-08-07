@@ -1,3 +1,29 @@
+✍️ A Note from the Creator
+Hi there! 👋
+
+I'm not a PowerShell expert or a professional developer.
+In fact, this entire project was built with the help of AI – mainly Claude and ChatGPT – and a lot of curiosity.
+
+I had a simple idea:
+
+“Why isn’t there a single command-line tool that manages everything on Windows – like apt or pacman on Linux?”
+
+So I decided to make one.
+
+WUPM is the result – a practical tool that works for me and might work for others, too.
+I’m still learning as I go, and I’m open about the fact that I don’t fully understand every line of code.
+
+If you’re a developer:
+Feel free to dive in, suggest improvements, or help shape the project.
+Even if I can’t answer every technical question right away, I’ll do my best to keep the project clear, open, and welcoming.
+
+This isn’t about being perfect – it’s about building something useful, together.
+
+Thanks for stopping by. 😊
+— Martin
+
+
+
 # WUPM - Windows Universal Package Manager
 
 [![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue.svg)](https://github.com/PowerShell/PowerShell)
@@ -343,6 +369,8 @@ WUPM provides:
 - **System-wide updates** including Windows and Store apps
 - **Health monitoring** with actionable recommendations
 - **Linux-style workflow** familiar to developers
+
+  
 
 ## 📄 License
 
