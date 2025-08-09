@@ -1,107 +1,70 @@
-✍️ A Note from the Creator
-Hi there! 👋
+# WUPM v2.0 - Windows Universal Package Manager 🤖✨
+![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue) ![Windows](https://img.shields.io/badge/Windows-10%2F11-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Version](https://img.shields.io/badge/Version-2.0-orange)
 
-I'm not a PowerShell expert or a professional developer.
-In fact, this entire project was built with the help of AI – mainly Claude and ChatGPT – and a lot of curiosity.
+**Finally, Linux-style package management that actually works on Windows - now with AI! 🚀**
 
-I had a simple idea:
+WUPM unifies all Windows package managers (WinGet, Chocolatey, Scoop, pip, npm, Cargo) under a single, intelligent command-line interface with **AI-powered natural language processing**. One command to rule them all!
 
-“Why isn’t there a single command-line tool that manages everything on Windows – like apt or pacman on Linux?”
+## ✨ New in v2.0: AI-Powered Edition
 
-So I decided to make one.
+### 🤖 AI Assistant
+- **Natural Language Processing** - Talk to your package manager in plain English
+- **Intelligent Recommendations** - Get smart software suggestions based on your needs
+- **System Analysis** - AI-powered health checks and optimization tips
+- **Context-Aware Help** - Get assistance tailored to your specific situation
 
-WUPM is the result – a practical tool that works for me and might work for others, too.
-I’m still learning as I go, and I’m open about the fact that I don’t fully understand every line of code.
+### 🪟 Complete Windows Integration
+- **Windows Updates** - Full integration with Windows Update (3 methods: PSWindowsUpdate, UsoClient, COM)
+- **Microsoft Store** - Automatic Store app updates via WinGet Store source
+- **System Health Monitoring** - Comprehensive analysis with actionable insights
+- **Beautiful Interface** - Modern, colorized output with progress indicators
 
-If you’re a developer:
-Feel free to dive in, suggest improvements, or help shape the project.
-Even if I can’t answer every technical question right away, I’ll do my best to keep the project clear, open, and welcoming.
+## 🎯 Quick Start Examples
 
-This isn’t about being perfect – it’s about building something useful, together.
-
-Thanks for stopping by. 😊
-— Martin
-
-
-## 🤖 Collaboration & Credit
-
-**I created WUPM with AI assistance, and I'm happy if it grows beyond what I can maintain myself!**
-
-### If you want to contribute:
-- **Small improvements:** Just send a PR, I'll review with AI help
-- **Major features:** Feel free to fork and expand - just keep me credited as original creator
-- **Want to become co-maintainer?** Reach out! I'm open to collaboration
-
-### What I ask:
-- Please keep credit to Martin (original creator) and Claude AI and ChatGPT (development assistant)
-- If you fork for major expansions, mention this as the original project
-- Be patient with my learning curve - I use AI to understand complex suggestions! 😊
-
-**I'm excited to see where the community takes this!** 🚀
-
-## 🙏 Acknowledgments & Future
-
-**Original Creator:** Martin (with Claude AI and ChatGPT assistance)
-
-This project started as "what if Linux package management existed on Windows?" 
-If it grows beyond my technical skills, I'm excited to see the community take it further!
-
-**Want to help expand WUPM?** 
-- Small fixes: Send PRs
-- Big features: Let's talk about collaboration  
-- Major fork: Keep the credits and let me know! 
-
-The goal was always to make Windows package management better - however that happens! 🎉
-
-# WUPM - Windows Universal Package Manager
-
-[![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue.svg)](https://github.com/PowerShell/PowerShell)
-[![Windows](https://img.shields.io/badge/Windows-10%2F11-green.svg)](https://www.microsoft.com/windows)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.3-red.svg)](https://github.com/yourusername/wupm/releases)
-
-> **Finally, Linux-style package management that actually works on Windows!**
-
-WUPM unifies all Windows package managers (WinGet, Chocolatey, Scoop, pip, npm, Cargo) under a single, intelligent command-line interface. One command to rule them all! 🚀
-
-## ✨ Features
-
-- 🔄 **Universal Package Management** - One interface for all package managers
-- 🧠 **Intelligent Installation** - Automatically tries all available managers until success
-- 🔍 **Cross-Manager Search** - Search across all repositories simultaneously
-- 🏥 **System Health Monitoring** - Detailed system analysis and recommendations
-- 🪟 **Windows Update Integration** - Manages Windows Updates and Microsoft Store apps
-- 🎨 **Beautiful Output** - Professional, colorized terminal interface
-- ⚡ **Fallback Mechanisms** - Robust error handling with automatic fallbacks
-- 📊 **Comprehensive Reporting** - Detailed installation and upgrade reports
-
-## 🎯 Quick Start
-
-**Install Firefox across all package managers:**
+### AI-Powered Commands
 ```powershell
+# Natural language installation
+wupm ai 'install development tools'
+# → Installs VS Code, Git, Node.js, Python automatically
+
+# AI system analysis
+wupm ai 'analyze my system'
+# → Complete health check with recommendations
+
+# Smart troubleshooting
+wupm ai 'why is my computer slow?'
+# → Performance analysis and optimization tips
+
+# Intelligent updates
+wupm ai 'update everything'
+# → Updates packages, Windows, and Store apps
+```
+
+### Classic Commands
+```powershell
+# Install software with automatic fallback
 wupm install firefox
-```
 
-**Update your entire system:**
-```powershell
-wupm update && wupm upgrade
-```
+# Update everything (packages + Windows + Store)
+wupm upgrade
 
-**Get detailed system status:**
-```powershell
+# Beautiful system status
 wupm status
+
+# Cross-manager search
+wupm search "visual studio code"
 ```
 
 ## 📦 Supported Package Managers
 
-| Package Manager | Description | Auto-Detection |
-|-----------------|-------------|----------------|
-| **WinGet** | Microsoft's official package manager | ✅ |
-| **Chocolatey** | Community-driven package repository | ✅ |
-| **Scoop** | Portable application installer | ✅ |
-| **pip** | Python package installer | ✅ |
-| **npm** | Node.js package manager | ✅ |
-| **Cargo** | Rust package manager | ✅ |
+| Package Manager | Description | Auto-Detection | Windows Updates | Store Apps |
+|----------------|-------------|---------------|----------------|-----------|
+| **🔷 WinGet** | Microsoft's official package manager | ✅ | ✅ | ✅ |
+| **🍫 Chocolatey** | Community-driven package repository | ✅ | ❌ | ❌ |
+| **🥄 Scoop** | Portable application installer | ✅ | ❌ | ❌ |
+| **🐍 pip** | Python package installer | ✅ | ❌ | ❌ |
+| **📦 npm** | Node.js package manager | ✅ | ❌ | ❌ |
+| **🦀 Cargo** | Rust package manager | ✅ | ❌ | ❌ |
 
 ## 🚀 Installation
 
@@ -117,7 +80,7 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 # 2. Create directory and download WUPM
 New-Item -Path "C:\wupm" -ItemType Directory -Force
-Invoke-WebRequest -Uri "https://github.com/coolerfisch/wupm/releases/latest/download/wupm.ps1" -OutFile "C:\wupm\wupm.ps1"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/coolerfisch/wupm/main/wupm.ps1" -OutFile "C:\wupm\wupm.ps1"
 
 # 3. Add to PowerShell profile
 if (!(Test-Path $PROFILE)) { New-Item -Path $PROFILE -ItemType File -Force }
@@ -128,53 +91,12 @@ Add-Content $PROFILE 'function wupm { & "C:\wupm\wupm.ps1" @args }'
 wupm version
 ```
 
-### Manual Installation
-
-#### Step 1: Enable PowerShell Scripts
-```powershell
-# Run PowerShell as Administrator
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
-```
-
-#### Step 2: Create Installation Directory
-```powershell
-New-Item -Path "C:\wupm" -ItemType Directory -Force
-cd C:\wupm
-```
-
-#### Step 3: Download WUPM
-```powershell
-# Download latest release
-Invoke-WebRequest -Uri "https://github.com/coolerfisch/wupm/releases/latest/download/wupm.ps1" -OutFile "wupm.ps1"
-```
-
-#### Step 4: Create PowerShell Profile Function
-```powershell
-# Add WUPM function to your PowerShell profile
-if (!(Test-Path $PROFILE)) { New-Item -Path $PROFILE -ItemType File -Force }
-
-Add-Content $PROFILE @'
-function wupm {
-    & "C:\wupm\wupm.ps1" @args
-}
-'@
-
-# Reload profile
-. $PROFILE
-```
-
-#### Step 5: Verify Installation
-```powershell
-wupm version
-```
-
-## 🎮 Usage
+## 🎮 Complete Command Reference
 
 ### Core Commands
-
 | Command | Description | Example |
 |---------|-------------|---------|
-| `wupm status` | Complete system health report | `wupm status` |
+| `wupm status` | Complete system health report with AI insights | `wupm status` |
 | `wupm search <package>` | Search across all package managers | `wupm search firefox` |
 | `wupm install <package>` | Install with intelligent fallback | `wupm install "visual studio code"` |
 | `wupm update` | Update repositories + Windows + Store | `wupm update` |
@@ -183,71 +105,98 @@ wupm version
 | `wupm version` | Version info with system summary | `wupm version` |
 | `wupm help` | Comprehensive help | `wupm help` |
 
-### Advanced Examples
+### 🤖 AI Commands
+| Command | Description | Example |
+|---------|-------------|---------|
+| `wupm ai 'your request'` | Natural language interface | `wupm ai 'install development tools'` |
+| `wupm ai 'analyze my system'` | Complete AI system analysis | `wupm ai 'analyze my system'` |
+| `wupm ai 'windows updates'` | Windows Update management | `wupm ai 'windows updates'` |
+| `wupm ai 'store updates'` | Microsoft Store management | `wupm ai 'store updates'` |
+| `wupm ai 'recommend software'` | Get software suggestions | `wupm ai 'recommend software'` |
 
-**Daily System Maintenance:**
-```powershell
-wupm update && wupm upgrade
-# Updates repositories, Windows Updates, Store apps, and all packages
-```
-
-**Batch Software Installation:**
-```powershell
-wupm install git
-wupm install nodejs
-wupm install python
-wupm install "visual studio code"
-```
-
-**System Health Check:**
-```powershell
-wupm status
-# Shows hardware info, disk space, memory, package managers, and recommendations
-```
-
-**Cross-Manager Package Search:**
-```powershell
-wupm search firefox
-# Searches WinGet, Chocolatey, and Scoop simultaneously
-```
-
-## 🎨 Sample Output
+## 🎨 Beautiful Output Example
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                      WUPM SYSTEM STATUS REPORT                              ║
+║                      ✨ WUPM v2.0 - Complete Edition ✨                       ║
+║                  🪟 Windows + 🏪 Store + 📦 Packages + 🤖 AI                  ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 🖥️  SYSTEM INFORMATION
-   ✓ OS: Windows 11 Pro (AMD64)
-   ✓ Version: 10.0.22621
-   ✓ PowerShell: 5.1.22621.2506
-   ✓ Memory: 32 GB Total
-   ✓ Disk C:: 445.2 GB free of 931.5 GB
+   ✨ OS: Microsoft Windows 11 Pro Insider Preview (AMD64)
+   ℹ️ Version: 10.0.27919
+   ⚡ PowerShell: 7.6.0-preview.4
+   🛡️ User: assen@THINK (THINK)
+   📊 Memory: 31.82 GB Total
+   ✨ Disk C:: 290.85 GB free of 476.07 GB
 
 📦 PACKAGE MANAGERS
-   ✓ WinGet - Version: v1.6.2771
-   ✓ Chocolatey - Version: 2.2.2
-   ✓ Scoop - Version: 0.3.1
-   ✓ pip - Version: 23.3.1 (Python 3.12.0)
-   ✓ NPM - Version: 10.2.4 (Node.js v21.2.0)
+   🔷 WinGet v1.11.430 🤖
+   🍫 Chocolatey v2.5.0 🤖
+   🥄 Scoop v#6080 🤖
+   🐍 pip v25.2 🤖
+     └─ Python: 3.13.6
+   📦 NPM v11.5.2 🤖
+     └─ Node.js: v24.0.2
+   🦀 Cargo v1.89.0 🤖
+
+🪟 WINDOWS UPDATES
+   ✨ Windows Update: Up to date
+
+🏪 MICROSOFT STORE
+   ✨ Microsoft Store: All apps up to date
 
 🔐 PRIVILEGES
-   ✓ Administrator - Full access to Windows Updates
+   👑 Administrator - Full system access
 
-⚡ RECOMMENDATIONS
-   ✓ Multiple package managers detected - excellent coverage
-   ✓ Sufficient disk space (445.2 GB free)
+🚀 Quick Actions
+   🚀 wupm upgrade                    # Update everything
+   🤖 wupm ai 'analyze my system'       # AI analysis
+   🪟 Settings → Windows Update         # Manual Windows updates
+   🏪 Microsoft Store → Downloads      # Manual Store updates
 ```
+
+## 🤖 AI Features Deep Dive
+
+### Natural Language Processing
+WUPM's AI understands natural language and converts it to appropriate actions:
+
+```powershell
+# Development Environment Setup
+wupm ai 'install development tools'
+# → Installs VS Code, Git, Node.js, Python
+
+# Web Development Setup  
+wupm ai 'setup web development environment'
+# → Installs VS Code, Node.js, Git, browsers
+
+# System Optimization
+wupm ai 'clean up my system'
+# → Provides cleanup recommendations
+
+# Performance Troubleshooting
+wupm ai 'why is my computer slow?'
+# → Analyzes performance issues
+```
+
+### Intelligent System Analysis
+The AI provides comprehensive system health analysis:
+
+- **Disk Space Analysis** - Warns about low space with actionable recommendations
+- **Package Manager Coverage** - Evaluates your package management setup
+- **Windows Update Status** - Checks for pending Windows and Store updates
+- **Performance Scoring** - Gives your system a health score out of 100
+- **Personalized Recommendations** - Tailored suggestions based on your system
 
 ## 🔧 Installing Package Managers
 
-WUPM works best when you have multiple package managers installed. Here's how to install the most popular ones:
+WUPM works best when you have multiple package managers installed:
 
-### WinGet (Windows 10)
+### WinGet (Recommended)
 ```powershell
-# Install via Microsoft Store: search for "App Installer"
-# Or download from: https://github.com/microsoft/winget-cli/releases
+# Usually pre-installed on Windows 11
+# For Windows 10: Install via Microsoft Store (search "App Installer")
+# Or: https://github.com/microsoft/winget-cli/releases
 ```
 
 ### Chocolatey
@@ -259,8 +208,72 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocola
 
 ### Scoop
 ```powershell
-iwr -useb get.scoop.sh | iex
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm get.scoop.sh | iex
 ```
+
+## 🛠️ Advanced Usage
+
+### Daily Maintenance Workflow
+```powershell
+# Complete system update (AI-powered)
+wupm ai 'update everything'
+
+# Or step-by-step
+wupm update    # Update repositories
+wupm upgrade   # Upgrade all packages
+```
+
+### Development Environment Setup
+```powershell
+# AI-powered development setup
+wupm ai 'install development tools'
+
+# Manual installation
+wupm install git
+wupm install nodejs  
+wupm install python
+wupm install "visual studio code"
+wupm install docker-desktop
+```
+
+### System Health Monitoring
+```powershell
+# AI system analysis
+wupm ai 'analyze my system'
+
+# Classic status check
+wupm status
+
+# Check for updates
+wupm list --upgradable
+```
+
+## 🆕 What's New in v2.0
+
+### 🤖 AI Integration
+- **Natural Language Processing** - Understand user intent from plain English
+- **Intelligent Recommendations** - Context-aware software suggestions
+- **System Analysis** - AI-powered health checks and optimization
+- **Smart Troubleshooting** - Performance analysis and issue resolution
+
+### 🪟 Windows Integration
+- **Windows Updates** - Full integration with multiple update methods
+- **Microsoft Store** - Automatic Store app management
+- **System Monitoring** - Comprehensive health and performance tracking
+- **Admin Detection** - Automatic privilege escalation when needed
+
+### 🎨 Enhanced Interface
+- **Beautiful Output** - Modern, colorized interface with Unicode icons
+- **Progress Indicators** - Visual feedback for long-running operations
+- **Structured Information** - Organized, scannable output format
+- **Error Handling** - Graceful error messages with helpful suggestions
+
+### 🔧 Technical Improvements
+- **Modern PowerShell** - Uses CIM cmdlets instead of deprecated WMI
+- **Enhanced Security** - Input validation and safe command execution
+- **Robust Error Handling** - Comprehensive try-catch blocks and fallbacks
+- **Performance Optimization** - Faster execution and better resource usage
 
 ## 🛠️ Troubleshooting
 
@@ -278,194 +291,109 @@ Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force
 
 # Reload PowerShell profile
 . $PROFILE
-
-# Check PowerShell profile
-Get-Content $PROFILE
 ```
 
-**"Access denied" or permission errors**
+**"Access denied" errors**
 ```powershell
-# Run PowerShell as Administrator for system-wide changes
-# Or use current user scope for profile changes
-```
-
-**Old version still running**
-```powershell
-# Find all wupm.ps1 files
-Get-ChildItem -Path C:\ -Name "wupm.ps1" -Recurse -ErrorAction SilentlyContinue
-
-# Remove old versions and restart PowerShell
+# Run PowerShell as Administrator for system-wide features
+# Right-click PowerShell → "Run as Administrator"
 ```
 
 **Package manager not detected**
 ```powershell
-# Verify package manager installation
-Get-Command winget -ErrorAction SilentlyContinue
-Get-Command choco -ErrorAction SilentlyContinue
-Get-Command scoop -ErrorAction SilentlyContinue
+# Verify installation
+wupm status
 
-# Add to PATH if necessary
-$env:PATH += ";C:\path\to\package\manager"
+# Check PATH
+$env:PATH -split ';' | Where-Object { $_ -like "*winget*" -or $_ -like "*choco*" }
 ```
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Development Guidelines
-
-- Follow PowerShell best practices and style guidelines
-- Maintain backward compatibility with PowerShell 5.1+
-- Add appropriate error handling for all new features
-- Update documentation for any new commands or options
-- Test on both Windows 10 and Windows 11
-- Ensure all package managers are properly supported
-
-### Reporting Bugs
-
-When reporting bugs, please include:
-- **OS Version:** Windows build number (`winver`)
-- **PowerShell Version:** `$PSVersionTable.PSVersion`
-- **WUPM Version:** `wupm version`
-- **Installed Package Managers:** `wupm status`
-- **Error Message:** Complete error output
-- **Steps to Reproduce:** Detailed reproduction steps
 
 ## 📋 Roadmap
 
 ### Planned Features
-- [ ] **GUI Interface** - Windows Forms or WPF frontend for non-technical users
-- [ ] **Configuration File** - User preferences and custom settings
-- [ ] **Background Updates** - Automatic update checking and notifications
-- [ ] **Plugin System** - Support for additional package managers
-- [ ] **Package Lists** - Save and restore package installation lists
+- [ ] **GUI Interface** - Windows Forms frontend for non-technical users
+- [ ] **Configuration File** - User preferences and custom settings  
+- [ ] **Package Lists** - Save and restore installation lists
 - [ ] **Scheduled Tasks** - Automatic maintenance scheduling
-- [ ] **Package Groups** - Install predefined software bundles
-- [ ] **Remote Management** - Manage packages on remote Windows systems
+- [ ] **Plugin System** - Support for additional package managers
+- [ ] **Remote Management** - Manage packages on remote systems
 
-### Version History
-- **v1.3** - Complete system integration, Windows Updates, Store Apps
-- **v1.2** - Enhanced error handling, improved output formatting
-- **v1.1** - Added Cargo support, system health monitoring
-- **v1.0** - Initial release with core functionality
+## 🤝 Contributing
+
+### 🙏 A Note from Martin (Creator)
+
+Hi there! 👋 I'm not a PowerShell expert or professional developer. This entire project was built with AI assistance (mainly Claude and ChatGPT) and lots of curiosity.
+
+**The idea was simple:** "Why isn't there a single tool that manages everything on Windows – like apt on Linux?"
+
+### How to Contribute
+
+**Small improvements:** Send a PR - I'll review with AI help  
+**Major features:** Feel free to fork - just keep me credited  
+**Want to co-maintain?** Reach out! I'm open to collaboration  
+
+**What I ask:**
+- Keep credit to Martin (original creator) and AI assistants
+- Be patient with my learning curve - I use AI to understand suggestions! 😊
+- If you fork for major expansions, mention this as the original
+
+### Development Guidelines
+- Follow PowerShell best practices
+- Maintain backward compatibility with PowerShell 5.1+
+- Add error handling for new features
+- Test on both Windows 10 and Windows 11
+- Update documentation for new commands
 
 ## 📊 System Requirements
 
 ### Minimum Requirements
-- **Operating System:** Windows 10 1809+ or Windows 11
-- **PowerShell:** Version 5.1 or later
+- **OS:** Windows 10 1809+ or Windows 11
+- **PowerShell:** 5.1 or later
 - **Memory:** 4 GB RAM
-- **Storage:** 100 MB free disk space
-- **Network:** Internet connection for package downloads
+- **Storage:** 100 MB free space
+- **Network:** Internet connection
 
-### Recommended Requirements
-- **Operating System:** Windows 11 22H2+
-- **PowerShell:** PowerShell 7.0+ (Core)
-- **Memory:** 8 GB RAM or more
-- **Storage:** 1 GB free disk space for package caching
-- **Privileges:** Administrator rights for Windows Updates
-
-## 🏆 Inspiration
-
-WUPM was inspired by the excellent package management systems found in Linux distributions:
-
-- **apt** (Debian/Ubuntu) - Simple, reliable package management
-- **yum/dnf** (Red Hat/Fedora) - Dependency resolution and system updates
-- **pacman** (Arch Linux) - Fast, lightweight package operations
-- **zypper** (openSUSE) - Advanced package management features
-
-The goal was to bring this unified, powerful package management experience to Windows users who have been managing software through various disconnected tools.
-
-## 🌟 Why WUPM?
-
-### The Problem
-Windows users typically manage software through:
-- Manual downloads from websites
-- Multiple package managers with different commands
-- Separate update processes for different software
-- No unified system overview or health monitoring
-
-### The Solution
-WUPM provides:
-- **One interface** for all package managers
-- **Automatic fallbacks** when one manager fails
-- **System-wide updates** including Windows and Store apps
-- **Health monitoring** with actionable recommendations
-- **Linux-style workflow** familiar to developers
-
-  
+### Recommended
+- **OS:** Windows 11 22H2+
+- **PowerShell:** 7.0+ (Core)
+- **Memory:** 8 GB+ RAM
+- **Privileges:** Administrator rights
+- **Package Managers:** WinGet + Chocolatey + Scoop
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](LICENSE) file for details.
 
-```
-MIT License
-
-Copyright (c) 2024 WUPM Contributors
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+**Made with ❤️ and 🤖 AI in Munich, Bavaria, Germany - for the Windows community.**
 
 ## 🙏 Acknowledgments
 
-- **Microsoft** - For PowerShell, WinGet, and the Windows platform
-- **Chocolatey Community** - For the amazing community package repository
-- **Scoop Community** - For innovative portable application management
-- **Python Software Foundation** - For pip and Python ecosystem
-- **Node.js Foundation** - For npm and Node.js ecosystem
-- **Rust Foundation** - For Cargo and Rust tooling
-- **Open Source Community** - For inspiration and continuous improvement
-- **Claude AI** - For initial development assistance and architecture design
-- **ChatGPT AI** - For readme help
+**Original Creator:** Martin (with AI tool assistance)  
 
-## 📞 Support & Community
+### 🤖 AI Tools Used
+**Honest thanks to the AI tools that made this possible:**
+- **🧠 Claude (Anthropic)** - Primary coding assistant, helped with architecture, debugging, and problem-solving
+- **🤖 ChatGPT (OpenAI)** - Additional development support, documentation help, and creative input
+- **🌟 The AI tool ecosystem** - Making programming accessible to non-developers like Martin
 
-### Getting Help
-- **📚 Documentation:** [GitHub Wiki](https://github.com/coolerfisch/wupm/wiki)
-- **🐛 Bug Reports:** [GitHub Issues](https://github.com/coolerfisch/wupm/issues)
-- **💬 Discussions:** [GitHub Discussions](https://github.com/coolerfisch/wupm/discussions)
-- **❓ Questions:** Use GitHub Discussions for general questions
+**WUPM v2.0 shows what's possible when someone with an idea uses AI tools to learn and build.** As a non-developer, Martin couldn't have created this without these AI assistants - but the vision, persistence, and curiosity were all human.
 
-### Community Guidelines
-- Be respectful and helpful to other users
-- Search existing issues before creating new ones
-- Provide detailed information when reporting bugs
-- Follow the code of conduct for all interactions
+### 🏢 Technology & Community
+**Special thanks to:**
+- Microsoft - For PowerShell, WinGet, and Windows
+- Chocolatey Community - For the amazing package ecosystem  
+- Scoop Community - For portable application innovation
+- Python, Node.js, Rust communities - For excellent tooling
+- **All contributors and users** - For making WUPM better
 
-### Stay Updated
-- **⭐ Star** this repository to show support
-- **👀 Watch** for notifications on new releases
-- **🔔 Follow** for updates on development progress
+*"I'm not a developer, but with AI tools like Claude and ChatGPT, I could build something useful. The future is about using these tools to turn ideas into reality."* - Martin, WUPM Creator
 
 ---
 
-**⭐ Star this repository if WUPM helps you manage your Windows packages more efficiently!**
+⭐ **Star this repository if WUPM helps you manage your Windows packages more efficiently!**
 
-**Made with ❤️ for the Windows community**
+**WUPM v2.0 - Built by human vision + AI tools 🚀🤖**
 
----
+⭐ **Star this repository if WUPM helps you manage your Windows packages more efficiently!**
 
-*WUPM - Because Windows deserves proper package management too!* 🚀
+**WUPM v2.0 - Because Windows deserves AI-powered package management! 🚀🤖**
