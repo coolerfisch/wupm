@@ -1,3 +1,81 @@
+[2.1.0] - 2025-08-22 - Enhanced Safety Edition
+🆕 Added
+
+Enhanced Safety System - Multi-level protection with configurable security levels (High/Medium/Low)
+AI Assistant - Natural language command processing with safety validation
+Execution Policy Auto-Fix - Automatic handling of PowerShell execution policy restrictions
+Package Trust Scoring - Reputation-based package validation system
+Content Filtering - Block malicious, adult, and risky content
+Parental Controls - Adult content blocking with configurable settings
+Comprehensive Audit Logging - Complete operation tracking and security events
+Package Blacklist Protection - Block known malicious packages
+Backup & Restore System - Save and restore package configurations
+Safety Configuration Commands - wupm safety and wupm safety-reset
+User Confirmation System - Optional confirmations for sensitive operations
+Risk Assessment Engine - AI-powered threat detection for commands and packages
+
+🛡️ Security Enhancements
+
+WUPMSafetyFilter Class - Comprehensive content and command validation
+Multi-Level Security Controls - Granular safety configuration options
+Real-time Safety Logging - All security events logged with timestamps
+Package Manager Safety Ratings - WinGet (High), Chocolatey (Medium), Scoop (High)
+Command Validation - Block dangerous system commands and operations
+
+🎨 UI/UX Improvements
+
+Enhanced ASCII Interface - Beautiful boxes and modern visual design
+Color-Coded Safety Indicators - Visual security status throughout interface
+Improved Error Messages - Clear, actionable error descriptions
+Safety Status Dashboard - Comprehensive security overview in status command
+Better Banner Design - Professional branding with safety emphasis
+
+🤖 AI Features
+
+Natural Language Processing - Process plain English commands safely
+Smart Package Installation - Context-aware development environment setup
+System Analysis - AI-powered health checks and recommendations
+Safety-First AI - All AI responses filtered through security validation
+
+🔧 Technical Improvements
+
+Automatic Policy Bypass - Self-restarting with execution policy bypass
+Enhanced Error Handling - Robust error recovery and user guidance
+Configuration Management - JSON-based safety settings storage
+Modular Architecture - Clean separation of safety, AI, and package management
+Memory Efficiency - Optimized for better performance
+
+📦 Package Management
+
+Safety-Filtered Installation - All installations validated before execution
+Manager Prioritization - Safety rating-based manager selection
+Enhanced Search - Multi-manager search with safety annotations
+Secure Updates - Validated repository updates and package upgrades
+
+📊 Configuration
+
+User Safety Preferences - Persistent safety configuration
+Granular Controls - Individual setting management
+Default Security - Secure-by-default configuration
+Easy Reset - Simple safety configuration reset
+
+🐛 Fixed
+
+Execution Policy Issues - Automatic bypass handling
+Unicode Display Problems - ASCII-safe character set
+Error Message Clarity - Improved user-friendly error descriptions
+Package Manager Detection - More reliable manager availability checking
+Command Parsing - Better handling of complex arguments
+
+📚 Documentation
+
+Comprehensive Help System - Detailed command documentation
+Safety Guide - Complete security feature explanation
+Example Commands - Practical usage examples for all features
+Troubleshooting - Common issues and solution
+
+
+
 # WUPM v2.0 - Windows Universal Package Manager 🤖✨
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1%2B-blue) ![Windows](https://img.shields.io/badge/Windows-10%2F11-blue) ![License](https://img.shields.io/badge/License-MIT-green) ![Version](https://img.shields.io/badge/Version-2.0-orange)
 
